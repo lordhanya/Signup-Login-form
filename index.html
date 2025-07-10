@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | Ashif</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="container" id="container">
+    <!-- Sign Up Form -->
+    <div class="form-container sign-up-container">
+      <form>
+        <h1>Create Account</h1>
+        <input type="text" placeholder="Username" required />
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Password" required />
+        <button>Register</button>
+        <p>or sign up with</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-google"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </form>
+    </div>
+
+    <!-- Sign In Form -->
+    <div class="form-container sign-in-container">
+      <form>
+        <h1>Login</h1>
+        <input type="text" placeholder="Username" required />
+        <input type="password" placeholder="Password" required />
+        <a href="#" class="forgot-link">Forgot Password?</a>
+        <button>Login</button>
+        <p>or login with</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-google"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </form>
+    </div>
+
+    <!-- Sliding Panel -->
+    <div class="overlay-container">
+      <div class="overlay">
+        <div class="overlay-panel overlay-left">
+          <h2>Welcome Back!</h2>
+          <p>To stay connected, login with your info</p>
+          <button class="ghost" id="signIn">Login</button>
+        </div>
+        <div class="overlay-panel overlay-right">
+          <h2>Hey, Buddy!</h2>
+          <p>Every journey begins with a step, start yours today!</p>
+          <button class="ghost" id="signUp">Register</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

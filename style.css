@@ -33,7 +33,6 @@ body::before {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  filter: blur(8px);
   transform: scale(1.05);
   z-index: -1;
 }
@@ -66,6 +65,14 @@ body::before {
   width: 50%;
   padding: 0 50px;
   text-align: center;
+}
+
+.form-container p.signin {
+  display: none;
+}
+
+.form-container p.register {
+  display: none;
 }
 
 .sign-in-container {
@@ -325,4 +332,123 @@ h2 {
 .overlay-panel.overlay-left h2,
 .overlay-panel.overlay-right h2 {
   font-size: 36px;
+}
+
+@media screen and (max-width: 768px) {
+  body::before {
+    background: url('image/15076078.png') no-repeat center center/cover;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 50%;
+    width: 80%;
+    max-width: none;
+    border-radius: 20px;
+  }
+
+  .sign-in-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sign-up-container {
+    display: none;
+  }
+
+  .container.show-signup .sign-in-container {
+    display: none;
+  }
+
+  .container.show-signup .sign-up-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .overlay-container {
+    display: none;
+  }
+
+  .form-container {
+    width: 100%;
+    position: relative;
+    height: auto;
+    border-radius: 0;
+    opacity: 1;
+    z-index: auto;
+  }
+
+  .form-container p.register {
+    font-size: 14px;
+    display: block;
+    margin: 20px auto;
+  }
+
+  .form-container p.signin{
+    font-size: 14px;
+    display: block;
+    margin-top: -10px;
+    margin-bottom: 20px;
+  }
+  .form-container a.login,
+  .form-container a.singup {
+    font-size: 14px;
+  }
+
+  .overlay {
+    width: 100%;
+    flex-direction: column;
+    left: 0;
+    transform: none !important;
+    border-radius: 0;
+  }
+
+  .overlay-panel {
+    width: 100%;
+    padding: 30px 20px;
+    height: auto;
+    transform: none !important;
+    text-align: center;
+  }
+
+  form {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  form h1 {
+    margin-top: 10px;
+    font-size: 28px;
+    font-weight: 700;
+  }
+
+  form input {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  input::placeholder {
+    color: #605f5f;
+  }
+
+  .social-icons a {
+    padding: 8px;
+  }
+
+  .forgot-link{
+    margin-top: 20px;
+  }
+
+  button,
+  .ghost {
+    padding: 10px 30px;
+    font-size: 13px;
+  }
 }

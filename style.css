@@ -344,7 +344,8 @@ h2 {
     justify-content: flex-start;
     align-items: center;
     width: 90%;
-    height: 50%;
+    min-height: 500px;
+    height: auto;
     border-radius: 20px;
     overflow: hidden;
     position: absolute;
@@ -360,6 +361,7 @@ h2 {
     left: 0;
     opacity: 0;
     overflow: hidden;
+    visibility: hidden;
     pointer-events: none;
     transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
     z-index: 0;
@@ -396,6 +398,7 @@ h2 {
   }
 
   form {
+    backface-visibility: hidden;
     width: 100%;
     padding: 10px;
   }

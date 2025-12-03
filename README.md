@@ -44,8 +44,7 @@ Signup-Login-form/
 ├── index.html          
 ├── style.css           
 ├── script.js           
-├── README.md           
-├── AGENTS.md           
+├── README.md                     
 └── image
     └── 15076078.png    
 ```

@@ -1,3 +1,18 @@
+Swal.fire({
+  icon: 'info',
+  title: 'Just a Preview!',
+  text: 'This is a UI-only webpage with no backend logic connected yet.',
+  confirmButtonText: 'Got it!',
+  confirmButtonColor: '#4f46e5',
+  customClass: {
+    popup: 'animate__animated animate__fadeInDown',
+    title: 'font-semibold text-gray-800',
+    confirmButton: 'rounded-full px-6 py-2 shadow-lg hover:shadow-xl transition-all'
+  },
+  timer: 4000,
+  timerProgressBar: true
+});
+
 const container = document.getElementById('container');
 const signUpBtn = document.getElementById('signUp');
 const signInBtn = document.getElementById('signIn');

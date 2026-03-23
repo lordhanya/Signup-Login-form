@@ -6,10 +6,10 @@ Swal.fire({
   confirmButtonColor: '#4f46e5',
   customClass: {
     popup: 'animate__animated animate__fadeInDown',
-    title: 'font-semibold text-gray-800',
+    title: 'font-semibold',
     confirmButton: 'rounded-full px-6 py-2 shadow-lg hover:shadow-xl transition-all'
   },
-  timer: 4000,
+  timer: 8000,
   timerProgressBar: true
 });
 
